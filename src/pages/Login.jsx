@@ -9,35 +9,65 @@ const Login = () => {
       <div className="container my-3 py-3">
         <h1 className="text-center">Login</h1>
         <hr />
-        <div class="row my-4 h-100">
+        <div className="row my-4 h-100">
           <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
             <form>
-              <div class="my-3">
-                <label for="display-4">Email address</label>
+              
+              <div className="form my-3">
+                <label for="Email">Email address</label>
                 <input
                   type="email"
-                  class="form-control"
-                  id="floatingInput"
+                  className="form-control"
+                  id="Email"
                   placeholder="name@example.com"
                 />
               </div>
-              <div class="my-3">
-                <label for="floatingPassword display-4">Password</label>
+              <div className="form  my-3">
+                <label for="Password">Password</label>
                 <input
                   type="password"
-                  class="form-control"
-                  id="floatingPassword"
+                  className="form-control"
+                  id="Password"
                   placeholder="Password"
                 />
               </div>
-              <div className="my-3">
-                <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
-              </div>
+            
+             < div className="form-check">
+        <input className="form-check-input" type="checkbox" value="" id="form2Example31"  />
+        <label className="form-check-label" for="form2Example31"> Remember me </label>
+      </div>
+    
+
+      
               <div className="text-center">
-                <button class="my-2 mx-auto btn btn-dark" type="submit" disabled>
-                  Login
+                <button
+                  class="my-2 mx-auto btn btn-dark"
+                  type="submit"
+                  disabled
+                >
+                  Login 
                 </button>
+                <p>
+                Not a member? <Link to="/Register">Register</Link>
+              </p>
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
               </div>
+              
             </form>
           </div>
         </div>
