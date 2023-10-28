@@ -1,4 +1,4 @@
-# totalitycorp-frontend-challenge
+# ShopZon
 
 > ShopZon  is a e-coomerce website  which i developed using  react and redux . This website has functionality like ADD TO CART,LOGIN SIGNUP PAGE ,
 > Filtering the product.
